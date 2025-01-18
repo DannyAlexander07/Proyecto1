@@ -1,0 +1,590 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "parte1"
+    "parte2"
+    "parte3"
+    "parte4"
+    "parte5"
+    "parte6"
+    "parte7"
+    "parte8"
+    "parte9"
+    "parte10"
+    "parte11";
+    overflow: hidden;
+}
+
+.header{
+    grid-area: parte1;
+    width: 100%;
+    height: 100%;
+    min-height: 35rem;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../IMG/mobile/image-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.header1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem 3rem;
+}
+
+.titulo{
+    font-size: 2.2rem;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0.35rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 0 2rem;
+}
+
+.flecha{
+    position: absolute;
+    width: 2.5rem;
+    height: 8rem;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header2{
+    display: none;
+}
+
+.grupo2{
+    width: 100%;
+    grid-area: parte2;
+    background-image: url(../IMG/mobile/image-transform.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 27rem;
+}
+
+.grupo3{
+    width: 100%;
+    grid-area: parte3;
+    height: 27rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textos{
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.titulo2{
+    color: #23303e;
+    font-size: clamp(1.6rem, 4vw, 1.8rem);
+    font-weight: 800;
+}
+
+.parrafo{
+    color: #818498;
+    font-size: clamp(0.8rem, 4vw, 0.6rem);
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+.enlace{
+    text-decoration: none;
+    color: #23303e;
+    font-weight: 800;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border-bottom: 0.6rem solid #fad40061;
+}
+
+.grupo4{
+    width: 100%;
+    grid-area: parte4;
+    background-image: url(../IMG/mobile/image-stand-out.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 27rem;
+}
+
+.grupo5{
+    width: 100%;
+    grid-area: parte5;
+    height: 27rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.t2{
+    color: #23303e;
+    font-size: clamp(1.6rem, 4vw, 1.9rem);
+    font-weight: 800;
+}
+
+.p2{
+    font-size: 1.1rem;
+}
+
+.e-1{
+    border-bottom: 0.6rem solid #fe79674c;
+}
+
+.grupo6{
+    width: 100%;
+    grid-area: parte6;
+    background-image: url(../IMG/mobile/image-graphic-design.jpg);
+    background-position:top center;
+    background-size: cover;
+    height: auto;
+    height: 43.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    row-gap: 0.7rem;
+}
+
+.textop{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+    margin: 3rem 0;
+}
+
+
+.titulo3{
+    color: #25564b;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+
+.parrafo2{
+    color: #19536b;
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.65;
+}
+
+.grupo7{
+    width: 100%;
+    grid-area: parte7;
+    background-image: url(../IMG/mobile/image-photography.jpg);
+    background-position: top center;
+    background-size: cover;
+    height: auto;
+    height: 43.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    row-gap: 0.7rem;
+}
+
+.titulo4{
+    color: #19536b;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+
+.grupo8{
+    grid-area: parte8;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.grupos-personas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 2rem;
+}    
+
+.usuario{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+}
+
+.posicion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo5{
+    color: #a7abae;
+    font-size: 1.35rem;
+    letter-spacing: 0.3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.descripcion{
+    color: #23303e;
+    font-weight: 500;
+    font-size: 1.04rem;
+}
+
+.nombre{
+    color: #23303e;
+    font-weight: 900;
+    font-size: 1.18rem;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+}
+
+.cargo{
+    color: #a7abae;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.grupo9{
+    grid-area: parte9;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+}
+
+.grupo10{
+    grid-area: parte10;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.grupo11{
+    grid-area: parte11;
+    background-color: #94d4c4;
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding: 4rem 0;
+}
+
+.menu-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.menu-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.submenu-footer{
+    list-style: none;
+}
+
+.sub-footer3{
+    text-decoration: none;
+    color: #439281;
+    font-weight: 700;
+}
+
+.redes{
+    display: flex;
+    column-gap: 1.2rem;
+}
+
+.logo-footer{
+    max-width: 10rem;
+    min-height: 2rem;
+    margin: 0 auto;
+}
+
+.grupo-opciones{
+    position: absolute;
+    background-color: #fff;
+    width: 84%;
+    height: 18.2rem;
+    top: 15rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grupo-opciones::before {
+    content: "";
+    position: absolute;
+    top: -28px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #FFF; 
+    clip-path: polygon(100% 100%, 100% 0, 0 100%); /* poligono del triangulo*/
+}
+
+.menu-hamburguesa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.submenu2{
+    list-style: none;
+}
+
+.sub2{
+    color: #a7abae;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.sub2:hover{
+    padding: 0.6rem 0.8rem;
+    background-color: #fcd404 ;
+    border-radius: 3rem;
+    color: #23303e;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+@media(min-width: 660px){
+
+    .contenedor{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "parte1 parte1"
+        "parte3 parte2"
+        "parte4 parte5"
+        "parte6 parte7"
+        "parte8 parte8"
+        "parte9 parte10"
+        "parte11 parte11";
+        overflow-y: visible;
+    }
+
+    .flecha{
+        position: absolute;
+        width: 4rem;
+        height: 9rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .header{
+        background-image: url(../IMG/desktop/image-header.jpg);
+        background-position: center;
+        height: 90vh;
+    }
+
+    .titulo{
+        margin-top: 0.5rem;
+        font-size: 2.5rem;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+    }
+
+    .header1{
+        display: none;
+    }
+
+    .header2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .grupo-header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 3rem;
+    }
+
+    .submenu{
+        list-style: none;
+    }
+
+    .sub{
+        text-decoration: none;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    .sub:hover{
+        color: #23303e;
+        padding: 0.6rem 0.8rem;
+        background-color: #fff;
+        border-radius: 3rem;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        font-weight: 800;
+    }
+
+    .grupo2{
+        background-image: url(../IMG/desktop/image-transform.jpg);
+        height: 28rem;
+    }
+
+    .textos{
+        text-align: left;
+        padding: 0 6rem;
+    }
+
+    .titulo2{
+        font-size: clamp(1.4rem, 4vw, 1.4rem);
+        padding: 0 7rem 0 0;
+    }
+
+    .t2{
+        font-size: clamp(1.4rem, 4vw, 1.4rem);
+    }
+
+    .parrafo{
+        font-size: clamp(0.5rem, 4vw, 0.7rem);
+        line-height: 1.8;
+    }
+
+    .enlace{
+        font-size: 0.7rem;
+        width: max-content;
+    }
+
+    .textop{
+        width: 100%;
+        min-width: 200px;
+        margin: 2rem 0;
+    }
+
+    .parrafo2{
+        padding: 0 5.5rem;
+        font-size: clamp( 0.65rem, 4vw, 0.75rem);
+    }
+
+    .pp2{
+        padding: 0 2.8rem;
+        font-size: clamp( 0.75rem, 3vw, 0.81rem);
+        font-weight: 700;
+    }
+
+    .grupo4{
+        background-image: url(../IMG/desktop/image-stand-out.jpg);
+        height: 28rem;
+    }
+
+    .grupo6{
+        background-image: url(../IMG/desktop/image-graphic-design.jpg);
+        height: 35rem;
+    }
+
+    .grupo7{
+        background-image: url(../IMG/desktop/image-photography.jpg);
+        height: 35rem;
+    }
+
+    .posicion{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .texto{
+        padding: 0 1rem;
+    }
+
+    .descripcion{
+        font-size: clamp(0.5rem, 4vw, 0.8rem);
+    }
+
+    .grupo-opciones{
+        display: none;
+    }
+}
+
+
