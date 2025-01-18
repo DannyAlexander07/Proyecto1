@@ -1,20 +1,20 @@
 
-let hamburguesa = document.getElementById("hamburguesa");
+let barra = document.getElementById("hamburguesa");
 
-let menuMovil = document.getElementById("menu-movil");
+let menu = document.getElementById("menu-movil");
 
 menuMovil.style.display = "none";
 
-hamburguesa.addEventListener("click", function(e) {
+barra.addEventListener("click", function(e) {
 
     e.preventDefault();
 
-   if(menuMovil.style.display == "none" || menuMovil.style.display == ""){
+   if(menu.style.display == "none" || menu.style.display == ""){
 
-        menuMovil.style.display = "flex";
+        menu.style.display = "flex";
    }
    else{
-        menuMovil.style.display = "none";
+        menu.style.display = "none";
    }
 });
 
