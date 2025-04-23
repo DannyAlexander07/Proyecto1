@@ -11,7 +11,6 @@ body{
 
 .contenedor{
     width: 100%;
-    max-width: 1440px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
